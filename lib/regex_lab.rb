@@ -1,8 +1,8 @@
 def starts_with_a_vowel?(word)
-  if %w{word}
-    true
-  else $word =~ /\A(?=[^aeiou])(?=[a-z])/i
-    false
+  if /^[^aeiou\W]/i.word == nil
+    return true
+  else
+    return false
   end
 end
 
