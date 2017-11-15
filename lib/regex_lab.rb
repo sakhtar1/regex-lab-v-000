@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
   if %w{word}
     true
-  else word =~ /\A[b-df-hj-np-tv-z]/
+  else $word =~ /\A(?=[^aeiou])(?=[a-z])/i
     false
   end
 end
